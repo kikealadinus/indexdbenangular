@@ -1,0 +1,63 @@
+<div class="row">
+
+    <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">                
+                <button class="btn btn-outline-primary mb-2" (click)="cargarImagenAleatoria()">
+                    Ver Parabolas
+                </button>
+                <img [src]="src" alt="" class="avatar">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">TECNOLOGÍAS</h5>
+            <ul class="list-group">
+                <img src="assets/img/gif.gif" alt="" class="">
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="titulo-datos">Ingrese datos</h4>
+                <form [formGroup]="formUser" (ngSubmit)="procesar()">
+                    <div class="mb-2">
+                        <label class="form-label">Nombre:</label>
+                        <input type="text" formControlName="name" class="form-control" placeholder="Ingrese nombre">
+        
+                        <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+                            El nombre es obligatorio
+                        </div>
+                    </div>
+            
+                    <div class="mb-2">
+                        <label class="form-label">Email:</label>
+                        <input type="email" formControlName="email" class="form-control" placeholder="Ingrese email">
+        
+                        <div class="alert alert-danger mt-2" [hidden]="email.valid || email.pristine">
+                            <span *ngIf="email.errors?.['required']">
+                                El email es obligatorio
+                            </span>
+        
+                            <span *ngIf="email.errors?.['email']">
+                                 El email debe ser valido
+                            </span>
+                        </div>
+                    </div>
+        
+                    <button class="btn btn-primary" [disabled]="formUser.invalid">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

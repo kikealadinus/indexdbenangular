@@ -1,0 +1,9 @@
+<h1>HISTORIAS BIBLICAS!</h1>
+
+<!-- <h5 class="card-title"><b>{{persona.Id}} &nbsp; </b>{{persona.Nombre}}</h5>
+      <p class="card-text">{{persona.Apellido}}</p> -->
+<ul class="list-group">
+  @for (h of historias; track h.id){
+  <li class="list-group-item">{{ h.title }} - {{ h.description }}</li>
+  }
+</ul>

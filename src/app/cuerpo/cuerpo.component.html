@@ -1,0 +1,88 @@
+<div class="card" >
+    <div class="card-body">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/19/17/20/ai-generated-7938199_1280.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_1280.jpg" alt="...">
+                </div> 
+                <div class="carousel-item active">
+                    <img src="assets/img/city.jpg"  alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/08/08/41/ai-7977960_1280.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2019/04/30/12/34/skyscrapers-4168483_1280.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2018/11/04/16/41/human-3794375_1280.jpg" alt="...">
+                </div>                               
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section>
+        <article class="seccion1">
+            <div class="btn-group-vertical" style="display: inline-block;" role="group" aria-label="Vertical radio toggle button group">
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off">
+                    <label class="btn btn-outline-danger" (click)="src='assets/img/Mandamiento1.jpg'" 
+                    for="vbtn-radio1">1 Mandamiento</label>
+
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                    <label class="btn btn-outline-danger" (click)="src='assets/img/mandamiento2.jpg'" 
+                    for="vbtn-radio2">2 Mandamiento</label>
+
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento3.jpg'" 
+                    for="vbtn-radio3">3 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento4.jpg'" 
+                    for="vbtn-radio4">4 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento5.jpg'" 
+                    for="vbtn-radio5">5 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio6" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento6.jpg'" 
+                    for="vbtn-radio6">6 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio7" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento7.jpg'" 
+                    for="vbtn-radio7">7 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio8" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento8.jpg'" 
+                    for="vbtn-radio8">8 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio9" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento9.jpg'" 
+                    for="vbtn-radio9">9 Mandamiento</label>
+    
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio10" autocomplete="off">
+                    <label class="btn btn-outline-danger" 
+                    (click)="src='assets/img/mandamiento10.jpg'" 
+                    for="vbtn-radio10">10 Mandamiento</label>
+            </div>
+        </article>
+        <article class="seccion2">
+            <img [src]="src" alt="" class="avatar">
+        </article>
+    </section>
+</main>
+
+
+

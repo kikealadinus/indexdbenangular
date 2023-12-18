@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+  background-color: rgba(30, 27, 3, 0.2);
+}
+
+ul {
+  text-align: justify;
+  
+}
+
+/* Estilos para el contenedor de la lista */
+.list-group{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el título de la lista */
+  .list-group-item {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f8dee2;
+    border: solid 5px red;
+    /* color: #007bff; */
+  }
+  
+  

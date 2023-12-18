@@ -1,0 +1,38 @@
+.navbar {
+    background-image: radial-gradient(circle, #141E30 0%, #243B55  51%, #141E30  100%);
+    /* position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; */
+    
+}
+
+.navbar .navbar-toggler{
+    background-color: red;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: Arial !important;
+}
+  
+.navbar-nav a:hover {
+    color: red !important; /* Cambia el color del enlace al pasar el mouse */
+    font-size: 110%; /* Ajusta el tamaño del texto al pasar el mouse */
+}
+
+.navbar .navbar-brand .logo{
+    width: 100%;
+    max-width: 90px;
+    border-radius: 0.6rem;
+    margin: 10px 10px;
+    opacity: 0.9;
+    transition: 400ms;  
+}
+
+.navbar .navbar-brand .logo:hover{
+    cursor: zoom-in;
+    transform: scale(1.2);
+    opacity: 1;
+    transform: rotateY(250deg);
+}

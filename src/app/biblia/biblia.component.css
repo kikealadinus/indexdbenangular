@@ -1,0 +1,46 @@
+.row {
+  margin: 0 auto; /* Centra el contenido de la fila */
+  max-width: 99%; /* Establece el ancho máximo de la fila al 90% */
+}
+
+.col-sm-4 {
+  padding: 0.5rem;
+}
+
+.card-body {
+  position: relative;
+  background-image: radial-gradient(circle, #5656b4, #74d674);
+}
+
+.card-body .btn:hover {
+    transform: scale(1.1);
+}
+
+/* .avatar {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 0.6rem;
+  border-style: double;
+} */
+
+.cad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
+
+.card-title{
+  color: red;
+  font-size: 28px;
+}
+
+.titulo-datos{
+  color: blue;
+  font-size: 30px;
+}
